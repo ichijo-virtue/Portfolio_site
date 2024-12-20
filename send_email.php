@@ -8,7 +8,7 @@
 
         // メールの内容を設定
         $to = "ichijo.chitose.virtue@gmail.com"; // 送信先のメールアドレス
-        $subject = "新しいコンタクトフォームのメッセージ";
+        $subject = "お問い合わせ内容";
         $body = "名前: $name\フリガナ: $furigana\nメール: $email\nメッセージ:\n$message";
         $headers = "From: $email";
 
