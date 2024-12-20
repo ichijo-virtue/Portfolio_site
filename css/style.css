@@ -28,6 +28,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 .container {
@@ -823,6 +824,8 @@ header .container {
 
 .flow_text_word_contact {
   text-decoration: underline;
+  color: #007657;
+  font-weight: bold;
 }
 
 /* .row_odd {
