@@ -42,27 +42,27 @@
             <p>2日以内の返信を厳守いたします。</p>
         </div>
         <div class="contact_form_box">
-            <form class="contact_form" action="">
+            <form class="contact_form" action="send_email.php" method="post">
                     <div class="form_label">
-                    <p class="form_label_text">氏名</p>
+                    <label class="form_label_text" for="name">氏名</label>
+                    <div class="form_required_box" ><span class="form_required">必須</span></div>
+                    </div>
+                    <input type="text" placeholder="山田 太郎" id="name" name="name" required>
+                    <div class="form_label">
+                    <label class="form_label_text" for="furigana">フリガナ</label>
                     <div class="form_required_box"><span class="form_required">必須</span></div>
                     </div>
-                    <input type="text" placeholder="山田 太郎">
+                    <input type="text" placeholder="ヤマダ タロウ" id="furigana" name="furigana" required>
                     <div class="form_label">
-                    <p class="form_label_text">フリガナ</p>
+                    <label class="form_label_text" for="email">メールアドレス</label>
                     <div class="form_required_box"><span class="form_required">必須</span></div>
                     </div>
-                    <input type="text" placeholder="ヤマダ タロウ">
+                    <input placeholder="example@example.com" type="email" id="email" name="email" required>
                     <div class="form_label">
-                    <p class="form_label_text">メールアドレス</p>
+                    <label class="form_label_text" for="message">お問い合わせ内容</label>
                     <div class="form_required_box"><span class="form_required">必須</span></div>
                     </div>
-                    <input type="mail" placeholder="example@example.com">
-                    <div class="form_label">
-                    <p class="form_label_text">お問い合わせ内容</p>
-                    <div class="form_required_box"><span class="form_required">必須</span></div>
-                    </div>
-                    <textarea id="sample" name="sample"></textarea>
+                    <textarea id="message" name="message" required></textarea>
                     <input class="contact_form_btn" type="submit" value="送信">
             </form>
         </div>
