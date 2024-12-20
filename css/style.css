@@ -313,10 +313,10 @@ header .container {
 
 .firstView__text-title {
   font-size: 8rem;
-  color: #0ef5e5;
+  color: #5CFFD3;
   position: relative;
   font-feature-settings: "palt";
-  text-shadow: 2px 2px 20px #19f7ff;
+  text-shadow: 2px 2px 20px #5CFFD3;
   font-weight: normal;
 }
 
