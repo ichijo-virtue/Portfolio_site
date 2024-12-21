@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // フォームのデータを取得
         $name = htmlspecialchars($_POST['name']);
@@ -21,4 +21,4 @@
     } else {
         echo "不正なリクエストです。";
     }
-?>
+?> -->
