@@ -207,10 +207,10 @@ header.hide{
   opacity: 0;
 }
 
-header .container {
+.header_container {
   display: flex;
   justify-content: space-between;
-  padding: 0 2%;
+  padding: 0 4%;
 }
 .header-title {
   line-height: 80px;
@@ -269,6 +269,7 @@ svg {
 }
 .burger {
   filter: url(#gooeyness);
+  display: none;
 }
 .x {
   transform: scale(0);
@@ -319,12 +320,8 @@ svg {
         /* ********************************* */
         /* header_responsive */
         /* ********************************* */
-@media screen and (min-width: 767px){
-  .burger {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 797px){
   .header_nav {
     display: none;
   }
