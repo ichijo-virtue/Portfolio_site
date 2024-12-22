@@ -228,9 +228,10 @@ header.hide{
   text-shadow: #5CFFD3 0 0 0.5rem;
   opacity: 1;
 }
-/* .nav_box {
-  
-} */
+.nav_box {
+  position: absolute;
+  right: 40px;
+}
 .header_nav {
   display: flex;
   justify-content: flex-end;
