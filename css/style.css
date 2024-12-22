@@ -520,6 +520,7 @@ header.hide{
 @media screen and (max-width: 507px) {
   .slide {
     width: auto;
+    object-fit: contain;
   }
   .firstView__text-title {
     font-size: 2.5rem;
