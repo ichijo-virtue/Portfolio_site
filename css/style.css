@@ -36,7 +36,9 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-
+      /* *********************************************** */
+      /* Subtitle_ber */
+      /* *********************************************** */
 .Sub_Title_ber {
   width: 420px;
   height: 72px;
@@ -84,8 +86,8 @@ a {
 
 .sub-title-text h2 {
   color: white;
-  font-size: 2rem;
-  padding-top: 8px;
+  font-size: 1.8rem;
+  padding-top: 2px;
   font-weight: normal;
   text-align: center;
 }
@@ -107,7 +109,7 @@ a {
 .sub-title-text p {
   color: white;
   font-size: 1rem;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   text-align: center;
 }
 
