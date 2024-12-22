@@ -653,9 +653,8 @@ header.hide{
 
 @media screen and (max-width: 768px) {
   .works_text {
-      font-size: 0.5rem;
       margin: 40px auto 0;
-      line-height: 1rem;
+      line-height: 1.2rem;
   }
 
   .slick-dots {
@@ -665,9 +664,9 @@ header.hide{
 
 @media screen and (max-width: 507px) {
   .works_text {
-      font-size: 0.4rem;
+      font-size: 0.6rem;
       margin: 40px auto 0;
-      line-height: 0.8rem;
+      line-height: 1rem;
   }
 }
 
