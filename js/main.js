@@ -133,7 +133,24 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(element); // 各要素を監視
     });
 });
-
-  
+// hunberger_Menu ******************************************
+  const nav = document.querySelector('.header_container');
+  const btn = document.querySelector('.toggle_btn');
+  const headerNav = document.querySelector('.header_nav');
+  const navBox = document.querySelector('.nav_box');
+  const lists = document.querySelectorAll('.list');
   
                   
+  btn.addEventListener('click', function() {
+    nav.classList.toggle('open');
+    headerNav.classList.toggle('open');
+    navBox.classList.toggle('open');
+  });
+
+  lists.forEach((list) =>{
+    list.addEventListener('click', function() {
+        nav.classList.remove('open');
+        headerNav.classList.remove('open');
+        navBox.classList.remove('open');
+    });
+  });
