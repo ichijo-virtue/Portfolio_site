@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const headerNav = document.querySelector('.header_nav');
   const navBox = document.querySelector('.nav_box');
   const lists = document.querySelectorAll('.list');
-  
+  const headerBer = document.getElementById('header');
                   
   btn.addEventListener('click', function() {
     nav.classList.toggle('open');
@@ -152,5 +152,6 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.remove('open');
         headerNav.classList.remove('open');
         navBox.classList.remove('open');
+        headerBer.style.top = '-80px';
     });
   });

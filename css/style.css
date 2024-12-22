@@ -279,6 +279,7 @@ header.hide{
 .nav_box {
   position: absolute;
   right: 40px;
+  transition: 0.5s;
 }
 .header_nav {
   display: flex;
@@ -293,6 +294,7 @@ header.hide{
   line-height: 32px;
   margin-top: 80px;
   width: 100%;
+  transition: 0.5s; 
   
 }
 .nav_box.open{
@@ -303,6 +305,7 @@ header.hide{
   right: 0;
   text-align: right;
   padding-right: 8%;
+  transition: 0.5s;
 }
 
 .header-nav-list {
@@ -333,6 +336,7 @@ header.hide{
   z-index: 3;
   cursor: pointer;
   display: none;
+  transition: all 0.5s;
 }
 .toggle_btn span {
   position: absolute;
@@ -342,6 +346,11 @@ header.hide{
   height: 4px;
   background-color: #eee;
   transition: all 0.5s;
+}
+.toggle_btn:hover span {
+  background-color: #5CFFD3;
+  box-shadow: 0 0 8px #5CFFD3;
+
 }
 .toggle_btn span:nth-child(1) {
   top: 3px;
@@ -1132,7 +1141,7 @@ header.hide{
 }
 
 .flow_step {
-  padding-top: 32px;
+  padding-top: 16px;
   font-size: 16px;
   color: #eee;
   font-family: serif, Georgia, 'Times New Roman', Times;
@@ -1192,7 +1201,9 @@ header.hide{
   .flow_table {
       width: 100%;
   }
-
+  .flow_text_title {
+      font-size: 1rem;
+  }
   .flow_text_word {
       padding-top: 16px;
       font-size: 0.7rem;
