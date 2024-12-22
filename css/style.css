@@ -444,9 +444,25 @@ header.hide{
   font-feature-settings: "palt";
   text-shadow: 2px 2px 20px #5CFFD3;
 }
-@media screen and (max-width: 507px) {
-  .slide {
-    width: auto;
+
+@media screen and (max-width: 1024px) {
+  .firstView__text-title {
+    font-size: 6rem;
+    max-width: 100%;
+    color: #5CFFD3;
+    position: relative;
+    font-feature-settings: "palt";
+    text-shadow: 2px 2px 20px #5CFFD3;
+    font-weight: normal;
+  }
+  .firstView__text-name {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    color: #ffffff;
+    font-feature-settings: "palt";
+    text-shadow: 2px 2px 20px #5CFFD3;
   }
 }
 @media screen and (max-width: 767px) {
@@ -464,6 +480,29 @@ header.hide{
     position: absolute;
     top: 80px;
     right: 10px;
+    color: #ffffff;
+    font-feature-settings: "palt";
+    text-shadow: 2px 2px 20px #5CFFD3;
+  }
+}
+@media screen and (max-width: 507px) {
+  .slide {
+    width: auto;
+  }
+  .firstView__text-title {
+    font-size: 2.5rem;
+    max-width: 100%;
+    color: #5CFFD3;
+    position: relative;
+    font-feature-settings: "palt";
+    text-shadow: 2px 2px 20px #5CFFD3;
+    font-weight: normal;
+  }
+  .firstView__text-name {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 55px;
+    right: 5px;
     color: #ffffff;
     font-feature-settings: "palt";
     text-shadow: 2px 2px 20px #5CFFD3;
