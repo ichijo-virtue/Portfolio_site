@@ -897,7 +897,7 @@ header.hide{
 
 @media screen and (max-width: 768px) {
   #service .Sub_Title_ber {
-      margin-top: 0;
+      margin-top: 40px;
   }
 
   .service_section {
