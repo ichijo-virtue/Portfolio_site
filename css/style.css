@@ -1053,6 +1053,9 @@ header.hide{
   #about .page_move_btn {
       margin: 40px auto 0;
   }
+  .about_text {
+    margin-top: 0;
+  }
 }
 
 /* ************************************************************** */
