@@ -334,23 +334,29 @@ header.hide{
     display: block;
   }
 }
+
 /* ************************************************************** */
 /* top-view */
 /* ************************************************************** */
+.top_view {
+  width: 100%;
+  height: 100vh;
+}
 .slideshow-container {
   position: relative;
   width: 100%;
   height: 100vh;
   /* ビューポートの高さに合わせる */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slide {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   visibility: hidden;
   transition: visibility 2s ease-in-out;
@@ -437,6 +443,11 @@ header.hide{
   color: #ffffff;
   font-feature-settings: "palt";
   text-shadow: 2px 2px 20px #5CFFD3;
+}
+@media screen and (max-width: 507px) {
+  .slide {
+    width: auto;
+  }
 }
 @media screen and (max-width: 767px) {
   .firstView__text-title {
