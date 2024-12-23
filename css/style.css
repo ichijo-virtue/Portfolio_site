@@ -836,45 +836,31 @@ header.hide{
   display: flex;
   justify-content: space-between;
 }
-.pre_arrow {
+.common_arrow {
   width: 200px;
   height: 40px;
   margin-top: 40px;
-  margin-left: 160px;
-  
   background-color: #777;
   color: white;
-  transform: skewX(-30deg);
-  
   box-shadow: 4px 4px 8px #777;
   transition: .5s
+}
+.pre_arrow {
+  margin-left: 10%;
+  transform: skewX(-30deg);
 }
 .next_arrow {
-  width: 200px;
-  height: 40px;
-  margin-top: 40px;
-  margin-right: 160px;
-  
-  
-  background-color: #777;
-  color: white;
+  margin-right: 10%;
   transform: skewX(30deg);
-  
-  box-shadow: 4px 4px 8px #777;
-  transition: .5s
 }
-.pre_arrow_text,
-.next_arrow_text,
-.return_btn_text {
+.arrow_btn {
   text-align: center;
   line-height: 40px;
   font-size: 1.1rem;
   color: #eee;
   display: block;
 }
-.pre_arrow_text:hover,
-.next_arrow_text:hover,
-.return_btn_text:hover {
+.arrow_btn:hover {
   color: #5CFFD3;
 }
 .pre_arrow_text {
@@ -884,24 +870,70 @@ header.hide{
   transform: skewX(-30deg);
 }
 .return_btn {
-  width: 200px;
-  height: 40px;
-  margin-top: 40px;
-  background-color: #777;
-  
-  box-shadow: 4px 4px 8px #777;
   border-radius: 2px;
-  transition: .5s
-
 }
-.pre_arrow:hover,
-.next_arrow:hover,
-.return_btn:hover {
+.pcommon_arrow:hover {
   background-color: #444;
   color: #5CFFD3;
   text-shadow: #5CFFD3 0 0 0.5rem;
 }
-
+@media screen and (max-width: 1024px) {
+  .work_view_imgbox {
+    min-width: 320px;
+  }
+  .work_table {
+    font-size: 0.9rem;
+    height: 160px;
+  }
+  .work_table::after {
+    height: 160px;
+  }
+  .common_arrow {
+    width: 120px;
+    height: 30px;
+  }
+  .arrow_btn {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work_view {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .work_view_imgbox {
+    width: 80%;
+    
+  }
+  .work_table::after {
+    display: none;
+  }
+  .common_arrow {
+    width: 80px;
+    height: 25px;
+  }
+  .arrow_btn {
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 507px) {
+  .work_table {
+    font-size: 0.8rem;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .work_table {
+    font-size: 0.7rem;
+    height: 120px;
+    width: 360px;
+  }
+  .work_footer {
+    margin-top: 40px;
+  }
+}
 
 /* ************************************************************** */
 /* Service */
