@@ -4,31 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_StoreSite-Grid</title>
+    <title>Portfolio_Mysite</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <header id="header">
+        <div class="header_container">
             <h1><a class="header-title" href="./index.html#top_view">Portfolio</a></h1>
-            <nav>
-                <ul class="header-nav">
-                    <li><a href="#works" class="header-nav-list works">Works</a></li>
-                    <li><a href="./index.html#service" class="header-nav-list service">Service</a></li>
-                    <li><a href="./index.html#about" class="header-nav-list about">About</a></li>
-                    <li><a href="./index.html#flow" class="header-nav-list flow">Flow</a></li>
-                    <li><a href="./index.html#faq" class="header-nav-list faq">FAQ</a></li>
-                    <li><a href="./contact.html" class="header-nav-list contact">Contact</a></li>
+            <nav class="nav_box">
+                <ul class="header_nav">
+                    <li><a href="./index.html#works" class="header-nav-list works list">Works</a></li>
+                    <li><a href="./index.html#service" class="header-nav-list service list">Service</a></li>
+                    <li><a href="./index.html#about" class="header-nav-list about list">About Me</a></li>
+                    <li><a href="./index.html#flow" class="header-nav-list flow list">Flow</a></li>
+                    <li><a href="./index.html#faq" class="header-nav-list faq list">FAQ</a></li>
+                    <li><a href="./contact.html" class="header-nav-list contact list">Contact</a></li>
                 </ul>
             </nav>
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
         </div>
     </header>
 
-    <div class="Sub_Title_ber_works">
+    <div class="Sub_Title_ber_works hidden">
         <div class="sub-title-text">
             <h2>Works</h2>
             <p>− 制作実績 −</p>
@@ -65,14 +69,14 @@
         </div>
     </div>
     <div class="pre_next_arrow">
-        <div class="pre_arrow">
-            <a class="pre_arrow_text" href="./work_02.html">前へ</a>
+        <div class="pre_arrow common_arrow">
+            <a class="pre_arrow_text arrow_btn" href="./work_02.html">前へ</a>
         </div>
-        <div class="return_btn">
-            <a class="return_btn_text" href="./works.html">一覧ページ</a>
+        <div class="return_btn common_arrow">
+            <a class="return_btn_text arrow_btn" href="./works.html">一覧ページ</a>
         </div>
-        <div class="next_arrow">
-            <a class="next_arrow_text" href="./work_04.html">次へ</a>
+        <div class="next_arrow common_arrow">
+            <a class="next_arrow_text arrow_btn" href="./work_04.html">次へ</a>
         </div>
     </div>
     
