@@ -215,23 +215,7 @@ a {
   opacity: 1;
 }
 
-/* ************************************************************** */
-/* Common (Works-page) */
-/* ************************************************************** */
-.Sub_Title_ber_works {
-  width: 420px;
-  height: 72px;
-  margin-top: 160px;
-  position: relative;
-  top: 0;
-  left: -100px;
-  background-color: #333;
-  color: white;
-  transform: skewX(30deg);
-  display: flex;
-  justify-content: end;
-  box-shadow: 4px 4px 8px #777;
-}
+
 
 /* ************************************************************** */
 /* header */
@@ -681,17 +665,127 @@ header.hide{
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
 }
+.works_page_img {
+  width: 100%;
+}
 .grid_works_title {
   color: #333; 
-  text-align: center;
+  text-align: left;
+  padding-left: 16px;
   font-weight: bold;
 }
 .grid_works_text {
   color: #333;
-  text-align: center;
+  text-align: left;
+  padding-left: 16px;
   margin-top: 4px;
+  position: relative;
+}
+.grid_works_text::before {
+  content: "";
+  width: 8px;
+  height: 40px;
+  background-color: #828282;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
+.Sub_Title_ber_works {
+  width: 420px;
+  height: 72px;
+  margin-top: 160px;
+  position: relative;
+  top: 0;
+  left: -100px;
+  background-color: #333;
+  color: white;
+  transform: skewX(30deg);
+  display: flex;
+  justify-content: end;
+  box-shadow: 4px 4px 8px #777;
+}
+@media screen and (max-width: 1024px) {
+  .Sub_Title_ber_works {
+    margin-top: 110px;
+  }
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .works_page_img {
+    width: 80%;
+  }
+  .Sub_Title_ber_works {
+    width: 320px;
+    height: 56px;
+  }
+  .Sub_Title_ber_works h2 {
+      font-size: 1.4rem;
+  }
+
+  .Sub_Title_ber_works p {
+      font-size: 0.8rem;
+  }
+  .product-list {
+    gap: 24px;
+  }
+  .grid_works_text {
+    font-size: 0.9rem;
+  }
 }
 
+@media screen and (max-width: 507px) {
+  .Sub_Title_ber_works {
+      width: 260px;
+      height: 50px;
+      margin-top: 100px;
+  }
+
+  .Sub_Title_ber_works h2 {
+      font-size: 1.2rem;
+  }
+
+  .Sub_Title_ber_works p {
+      font-size: 0.6rem;
+  }
+
+  .sub-title-text {
+      padding-right: 60px;
+  }
+
+  .sub-title-text h2::after {
+      width: 40px;
+  }
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .product-list li {
+    padding-bottom: 40px;
+  }  
+  .grid_works_title {
+    padding-left: 80px;
+  }
+  .grid_works_text {
+    padding-left: 80px;
+  }
+  .grid_works_text::before {
+    left: 60px;
+  }
+  
+}
+@media screen and (max-width: 450px) {
+  .grid_works_text::before {
+    height: 35px;
+  }
+  .grid_works_text {
+    font-size: 0.8rem;
+  }
+}
 
 /* ************************************************************** */
 /* Works(Work-page) */

@@ -2,92 +2,97 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_Works</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio_Works</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1><a class="header-title" href="./index.html#top_view">Portfolio</a></h1>
-            <nav>
-                <ul class="header-nav">
-                    <li><a href="#works" class="header-nav-list works">Works</a></li>
-                    <li><a href="./index.html#service" class="header-nav-list service">Service</a></li>
-                    <li><a href="./index.html#about" class="header-nav-list about">About</a></li>
-                    <li><a href="./index.html#flow" class="header-nav-list flow">Flow</a></li>
-                    <li><a href="./index.html#faq" class="header-nav-list faq">FAQ</a></li>
-                    <li><a href="./contact.html" class="header-nav-list contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="Sub_Title_ber_works">
-        <div class="sub-title-text">
-            <h2>Works</h2>
-            <p>− 制作実績 −</p>
-        </div>
-    </div>
-
-    <div class="works_contents container">
-        
-        <ul class="product-list">
-          <li>
-            <a href="./work_01.html">
-              <img style="width: 100%;" src="./img/portfolioflame.png" alt="">
-              <p class="grid_works_title">Portfolio-Site</p>
-              <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
-            </a>
-          </li>
-          <li>
-            <a href="./work_02.html">
-              <img style="width: 100%;" src="./img/storesite.png" alt="">
-              <p class="grid_works_title">Store-Site</p>
-              <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
-            </a>
-          </li>
-          <li>
-            <a href="./work_03.html">
-              <img style="width: 100%;" src="./img/storesite-grid.png" alt="">
-              <p class="grid_works_title">Store-Site-grid</p>
-              <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
-            </a>
-          </li>
-          <li>
-            <a href="./work_04.html">
-              <img style="width: 100%;" src="./img/school-LP.png" alt="">
-              <p class="grid_works_title">SchoolLP-Site</p>
-              <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
-            </a>
-          </li>
-          <li>
-            <a href="./work_05.html">
-              <img style="width: 100%;" src="./img/mediasite.png" alt="">
-              <p class="grid_works_title">Media-Site</p>
-              <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
-            </a>
-          </li>
-          
-          
-          
+  <header id="header">
+    <div class="header_container">
+      <h1><a class="header-title" href="./index.html#top_view">Portfolio</a></h1>
+      <nav class="nav_box">
+        <ul class="header_nav">
+          <li><a href="./index.html#works" class="header-nav-list works list">Works</a></li>
+          <li><a href="./index.html#service" class="header-nav-list service list">Service</a></li>
+          <li><a href="./index.html#about" class="header-nav-list about list">About Me</a></li>
+          <li><a href="./index.html#flow" class="header-nav-list flow list">Flow</a></li>
+          <li><a href="./index.html#faq" class="header-nav-list faq list">FAQ</a></li>
+          <li><a href="./contact.html" class="header-nav-list contact list">Contact</a></li>
         </ul>
+      </nav>
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    
-    
+      <div id="mask"></div>
+    </div>
+  </header>
 
-    <footer>
-        <h4>Portfolio</h4>
-    </footer>
+  <div class="Sub_Title_ber_works hidden">
+    <div class="sub-title-text">
+      <h2>Works</h2>
+      <p>− 制作実績 −</p>
+    </div>
+  </div>
 
-    
-    
-    
+  <div class="works_contents container">
+
+    <ul class="product-list">
+      <li>
+        <a href="./work_01.html">
+          <img class="works_page_img" src="./img/portfolioflame.png" alt="">
+          <p class="grid_works_title">Portfolio-Site</p>
+          <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
+        </a>
+      </li>
+      <li>
+        <a href="./work_02.html">
+          <img class="works_page_img" src="./img/storesite.png" alt="">
+          <p class="grid_works_title">Store-Site</p>
+          <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
+        </a>
+      </li>
+      <li>
+        <a href="./work_03.html">
+          <img class="works_page_img" src="./img/storesite-grid.png" alt="">
+          <p class="grid_works_title">Store-Site-grid</p>
+          <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
+        </a>
+      </li>
+      <li>
+        <a href="./work_04.html">
+          <img class="works_page_img" src="./img/school-LP.png" alt="">
+          <p class="grid_works_title">SchoolLP-Site</p>
+          <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
+        </a>
+      </li>
+      <li>
+        <a href="./work_05.html">
+          <img class="works_page_img" src="./img/mediasite.png" alt="">
+          <p class="grid_works_title">Media-Site</p>
+          <p class="grid_works_text">HTML/CSS/JavaScript/jQuery</p>
+        </a>
+      </li>
+
+
+
+    </ul>
+  </div>
+
+
+
+  <footer>
+    <h4>Portfolio</h4>
+  </footer>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/main.js"></script>Ï
 </body>
 
 </html>
