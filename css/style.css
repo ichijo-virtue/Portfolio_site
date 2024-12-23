@@ -1603,11 +1603,52 @@ afterが縦棒
   position: absolute;
   right: 24px;
 }
+@media screen and (max-width: 1280px) {
+  .contact_form_box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact_area {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+  .contact_form_box {
+    width: 60%;
+  }
+  .contact_text {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_area {
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto 0;
+  }
+  .contact_text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact_form_box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_text {
+    width: 100%;
+  }
+  .contact_form_box {
+    width: 100%;
+  }
+}
 /* ************************************************************** */
 /* Footer */
 /* ************************************************************** */
 footer {
   margin-top: 80px;
+  text-align: center;
   height: 80px;
   background-color: #333;
 }
