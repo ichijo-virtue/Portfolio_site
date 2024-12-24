@@ -87,16 +87,16 @@ a {
   text-align: right;
   font-family: serif, Georgia, 'Times New Roman', Times;
 }
-
-.sub-title-text h2 {
+.sub-title-text h2,
+.sub-title-text h3 {
   color: white;
   font-size: 1.8rem;
   padding-top: 2px;
   font-weight: normal;
   text-align: center;
 }
-
-.sub-title-text h2::after {
+.sub-title-text h2::after,
+.sub-title-text h3::after {
   content: "";
   position: absolute;
   background-color: #5CFFD3;
@@ -132,8 +132,8 @@ a {
       height: 56px;
       margin-top: 60px;
   }
-
-  .Sub_Title_ber h2 {
+  .Sub_Title_ber h2,
+  .Sub_Title_ber h3 {
       font-size: 1.4rem;
   }
 
@@ -148,8 +148,8 @@ a {
       height: 50px;
       margin-top: 40px;
   }
-
-  .Sub_Title_ber h2 {
+  .Sub_Title_ber h2,
+  .Sub_Title_ber h3 {
       font-size: 1.2rem;
   }
 
@@ -161,7 +161,8 @@ a {
       padding-right: 60px;
   }
 
-  .sub-title-text h2::after {
+  .sub-title-text h2::after, 
+  .sub-title-text h3::after {
       width: 40px;
   }
 }
@@ -1526,6 +1527,9 @@ afterが縦棒
 /* ************************************************************** */
 /* Contact */
 /* ************************************************************** */
+.Sub_Title_ber {
+  margin-top: 120px;
+}
 .contact_area {
   display: flex;
   justify-content: center;
