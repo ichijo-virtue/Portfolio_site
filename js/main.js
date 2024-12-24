@@ -107,7 +107,42 @@ $(function(){
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // スクロール位置を更新
         });
-        
+        ///////////////////////////////////////////////////
+        //slick_adjust
+        $(document).ready(function(){
+            // $('.your-class').slick({
+            //     setting-name: setting-value
+            // });
+            $('.center').slick({
+                centerMode: true,
+                dots: true,
+                centerPadding: '100px',
+                slidesToShow: 3,
+                autoplay: true,
+                autoplayspeed: 1000,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+            });
+        });
+
 });
     
     // sub_title_bar ************************************************************************************************************
