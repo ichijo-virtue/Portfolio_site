@@ -1661,3 +1661,12 @@ footer h4 {
   text-align: center;
 }
 
+/* ************************************************************** */
+/* Slick_initialize */
+/* ************************************************************** */
+.center {
+  visibility: hidden;
+}
+.center.slick-initialized {
+  visibility: visible;
+}
