@@ -15,7 +15,10 @@ body {
 *, *::before, *::after {
   box-sizing: border-box; /* ボックスモデルを統一 */
 }
-
+*::selection {
+  color: #eee;
+  background-color: #333;
+}
 h1,
 h2,
 h3,
@@ -1674,3 +1677,4 @@ footer h4 {
 .center.slick-initialized {
   visibility: visible;
 }
+
