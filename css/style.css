@@ -1360,11 +1360,11 @@ header.hide{
   box-shadow: 4px 4px 4px #777;
 }
 
-#ac-menu li {
+#ac-menu dl {
   border-top: solid 1px #000;
 }
 
-#ac-menu li:last-child {
+#ac-menu dl:last-child {
   border-bottom: solid 1px #000;
 }
 
