@@ -50,6 +50,36 @@ setTimeout(() => {
 
 //FAQーアコーディオンメニュー　************************************************
 $(function(){
+
+    // スムーススクロール＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a[href^="#"]');
+    const headerHeight = 80; // ヘッダーの高さを取得
+
+    links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const href = link.getAttribute('href');
+            const targetSection = document.querySelector(href);
+            if (targetSection) {
+                const sectionTop = targetSection.getBoundingClientRect().top + window.scrollY;
+                const target = sectionTop - headerHeight; // ヘッダーの高さを引く
+
+                window.scrollTo({
+                    top: target,
+                    behavior: 'smooth',
+                });
+                setTimeout(() => {
+                    header.style.transform = 'translateY(-80px)'; // ヘッダーを上に80px移動
+                    header.style.transition = 'transform 0.3s ease'; // トランジションを追加
+                }, 500); 
+            }
+        });
+    });
+});
+
+
+
     // アコーディオンメニューのラベルがクリックされた場合
     $("#ac-menu .label").on("click", function() {
       // labelクラスの次の要素（detailクラス）の表示・非表示を切り替える
@@ -218,3 +248,5 @@ document.addEventListener('DOMContentLoaded', function() {
         headerBer.style.top = '-80px';
     });
   });
+
+  

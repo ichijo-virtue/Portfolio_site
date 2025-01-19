@@ -2,6 +2,9 @@
 /* ************************************************************** */
 /* Common */
 /* ************************************************************** */
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
   max-width: 100vw;
@@ -379,10 +382,10 @@ header.hide{
 /* top-view */
 /* ************************************************************** */
 
-.top_view {
+/* #top_view {
   width: 100%;
   height: 100vh;
-}
+} */
 
 .slideshow-container {
   position: relative;
@@ -446,10 +449,10 @@ header.hide{
 }
 
 .firstView__text.view {
-  position: absolute;
-  top: 200px;
+  /* position: absolute;
+  top: 200px; */
   left: 100px;
-  font-weight: normal;
+  /* font-weight: normal; */
   display: block;
   animation: view-in 2.5s;
   animation-fill-mode: both;
@@ -528,7 +531,7 @@ header.hide{
   }
 }
 
-.text {
+.one_step .text {
   opacity: 0;
   /* 初期状態で非表示 */
   transition: opacity 0.5s ease-in;
@@ -538,7 +541,7 @@ header.hide{
 /* ************************************************************** */
 /* Works */
 /* ************************************************************** */
-#works {
+.works {
   max-width: 1440px;
   width: 100%;
 }
@@ -585,9 +588,9 @@ header.hide{
   bottom: -70px;
 }
 
-#key_visual .slider_img {
+/* #key_visual .slider_img {
   width: 20%;
-}
+} */
 .slick-slide {
   transition: transform 0.3s ease;
 }
@@ -866,6 +869,7 @@ header.hide{
 }
 .arrow_btn:hover {
   color: #5CFFD3;
+  /* text-shadow: #5CFFD3 0 0 0.5rem; */
 }
 .pre_arrow_text {
   transform: skewX(30deg);
@@ -876,9 +880,9 @@ header.hide{
 .return_btn {
   border-radius: 2px;
 }
-.pcommon_arrow:hover {
+.common_arrow:hover {
   background-color: #444;
-  color: #5CFFD3;
+  /* color: #5CFFD3; */
   text-shadow: #5CFFD3 0 0 0.5rem;
 }
 @media screen and (max-width: 1024px) {
@@ -1441,7 +1445,7 @@ afterが縦棒
   font-size: .9rem;
 }
 
-#ac-menu .detail dl {
+/* #ac-menu .detail dl {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1455,7 +1459,7 @@ afterが縦棒
 #ac-menu .detail dd {
   width: 80%;
   margin-bottom: 40px;
-}
+} */
 
 .faq_a {
   font-size: 1.2rem;
